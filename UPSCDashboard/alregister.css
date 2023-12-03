@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#ip{
+    border: 1.5px solid transparent;
+    padding: 50px;
+    border-color: black;
+    margin: 20px;
+}
+#lo{
+    background-color: rgba(137, 156, 241, 0.781);
+    padding: 10px;
+}
+body{
+    padding: 10%;
+   
+    background-image:url("image-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#lp{
+    text-align: center;
+}
+#an{
+    padding-top: 0%;
+}

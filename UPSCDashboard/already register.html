@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style="color: aquamarine;">Already Registered</title>
+        <link rel="icon" type="image/x-icon" href="pillar-1.jpg">
+        <link rel="stylesheet" href="alregister.css">
+    </head>
+    <body>
+        <a href="Upsc register.html" id="an"> <h3>...Back</h3></a>
+        <h2 id="lp">LOGIN PAGE</h2>
+        <form style="text-align: center;" method="get" id="ip">
+            <p>
+                <label for="mode">Select Mode for Login</label>
+                
+                <input type="radio" id="Email" value="Email ID" name="mode" onclick="myfunction1();" checked>
+                <label for="Email">Email ID</label>
+                <input type="radio" id="Num" value="Mobile Number" name="mode" onclick="myfunction2();">
+                <label for="Num">Mobile Number</label>
+                <input type="radio" id="otr" value="OTR ID" name="mode" onclick="myfunction3();">
+                <label for="otr" id="ot">OTR ID</label>
+                <br><br>
+                
+                <label for="Mobile" id="mob">Email ID</label>
+                <input type="text" id="Mobile"   name="Mobile Number">
+                <br><br>
+                <label for="eotp">Enter OTP/Password</label>
+                <input type="text" id="eotp" >
+                <br><br>
+                <button type="submit" id="lo"  ><h3>Login</h3></button>
+                <br>
+
+            </p>
+        </form>
+        <script>
+            function myfunction1(){
+
+               document.getElementById("mob").innerHTML="Email ID";
+                 }
+                 function myfunction2(){
+
+               document.getElementById("mob").innerHTML="Mobile Number";
+  }
+  function myfunction3(){
+
+document.getElementById("mob").innerHTML="OTR";
+  }
+  document.getElementById('ip').addEventListener('submit', function(event) {
+  var mob = document.getElementById('mob').value;
+  var eotp = document.getElementById('eotp').value;
+ 
+
+  if (mob === '' || eotp === '') {
+    event.preventDefault(); // Prevent form submission
+    alert('Please fill out all fields before submitting.');
+  }
+  else{
+    alert('Login Successfull!!!');
+  }
+});
+ 
+        </script>
+    </body>
+</html>

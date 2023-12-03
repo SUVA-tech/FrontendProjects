@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="icon" type="image/x-icon" href="pillar-1.jpg">
+        <style>
+            body  {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-yKsK00qQPwX2d2vHIyPiVx38J5x7ChYk8EERUY3CvxHderlpAKW12uYwGDNlmcsejM&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: 100%;
+    
+}
+#hi{
+    border: 1.5px solid transparent;
+    padding: 50px;
+    border-color: black;
+    margin: 20px;
+}
+
+        </style>
+    </head>
+    <body>
+     <a href="Upsc register.html" style="color:white;"> <h3><=Back</h3></a>
+       <form method="get" id="hi" style="text-align: center;">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name"  >
+        </p>
+        <p>
+            <label for="vname">Verify Name</label>
+            <input type="text" id="vname"   >
+        </p>
+        <p>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" autocomplete="none"  >
+                <option value="none">Select an option</option>
+                <option for="Male">Male</option>
+                <option for="Female">Female</option>
+                <option for="Transgender">Transgender</option>
+            </select>
+        </p>
+        <p>
+            <label for="vgender">Verify Gender</label>
+            <select id="vgender" name="vgender" autocomplete="none"   >
+                <option value="none">Select an option</option>
+                <option for="Male">Male</option>
+                <option for="Female">Female</option>
+                <option for="Transgender">Transgender</option>
+            </select>
+        </p>
+        <p>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob"  >
+        </p>
+        <p>
+            <label for="fname">Father Name</label>
+            <input type="text" id="fname"   >
+        </p>
+        <p>
+            <label for="mname">Mother Name</label>
+            <input type="text" id="mname"   >
+        </p>
+        <p>
+            <label for="minority">Minority</label>
+            <select id="minority"   >
+                <option value="none">Select an option</option>
+                <option for="Yes">Yes</option>
+                <option for="No">No</option>
+            </select>
+        </p>
+        <p>
+            <label for="mob">Mobile Number</label>
+            <input type="number" id="mob"   >
+        </p>
+        <p>
+            <label for="email">Email ID</label>
+            <input type="text" id="email" placeholder="abcde@gmail.com"   >
+        </p>
+        <p>
+            <label for="bno">Class board X exam number</label>
+            <input type="number" id="bno"  >
+        </p>
+        <p>
+            <label for="security1">Security Question1</label>
+            <select id="security1" name="security1"  >
+                <option value="none">Select an option</option>
+                <option for="What is your favourite subject?">What is your favourite subject?</option>
+                <option for="What is your childhood name?">What is your childhood name?</option>
+                <option for="Who is your favourite sports person?">Who is your favourite sports person?</option>
+                <option for="What is your favourite place?">What is your favourite place?</option>
+                <option for="Who is your inspiration?">What is your inspiration?</option>
+            </select>
+        </p>
+        <p>
+            <label for="security2">Security Question2</label>
+            <select id="security2" name="security2"  >
+                <option value="none">Select an option</option>
+                <option for="What is your favourite subject?">What is your favourite subject?</option>
+                <option for="What is your childhood name?">What is your childhood name?</option>
+                <option for="Who is your favourite sports person?">Who is your favourite sports person?</option>
+                <option for="What is your favourite place?">What is your favourite place?</option>
+                <option for="Who is your inspiration?">What is your inspiration?</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+       
+       </form>
+       
+   
+    <script>
+    document.getElementById('hi').addEventListener('submit', function(event) {
+  var name = document.getElementById('name').value;
+  var vname = document.getElementById('vname').value;
+  var gender = document.getElementById('gender').value;
+  var vgender = document.getElementById('vgender').value;
+  var dob = document.getElementById('dob').value;
+  var fname = document.getElementById('fname').value;
+  var mname = document.getElementById('mname').value;
+  var minority = document.getElementById('minority').value;
+  var mob = document.getElementById('mob').value;
+  var email = document.getElementById('email').value;
+  var bno = document.getElementById('bno').value;
+  var security1 = document.getElementById('security1').value;
+  var security2 = document.getElementById('security2').value;
+
+  
+  if (name === ''  || vname === '' || email === ''|| gender === '' || vgender === '' || dob === '' || fname === '' || mname === '' || minority === '' || mob === '' || bno === '' || security1 === ''|| security2 === '') {
+    event.preventDefault(); // Prevent form submission
+    alert('Please fill out all fields before submitting.');
+  }
+  else{
+    alert('Successfully Registered!!!');
+  }
+ });
+      </script>
+    </body>
+</html>
