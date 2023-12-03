@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 35px;
+    color: deeppink;
+}
+.main{
+    width: 100%;
+    background:url(6249980.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.p{
+    text-align:center;
+    padding-left: 2%;
+    padding-top: 2%;
+
+}
+.q{
+    text-align:center;
+    padding-left:2%;
+    
+}
+.r{
+    text-align:center;
+    padding-left:2%;    
+}
+.s
+{
+    padding-right:  7%;
+    padding-bottom: 1px;
+    text-align: end;
+    
+}
+button{
+    padding: 20px;
+    background-color: rgba(236, 143, 77, 0.678);
+    border-color: blanchedalmond;
+    color: rgba(26, 24, 19, 0.801);
+    border-collapse: separate;
+}
